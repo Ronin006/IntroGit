@@ -15,6 +15,8 @@ bool valid_password(string password) {
   bool has_space = false;
   // Your code goes here
 
+cout << "Validating password: " << password << std::endl;
+
   if (password.length() < 8) {
     std::cout << "The password must be at least 8 characters" << std::endl;
     right = false;
@@ -51,6 +53,9 @@ bool valid_password(string password) {
       std::cout << "The password must contain at least 1 special character" << std::endl;
       right = false;
     }
+  if (right) {
+    std::cout << "The password is valid" << std::endl;
+  } 
     return right; // Placeholder return value
 
 }
