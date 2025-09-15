@@ -19,13 +19,25 @@ void prime(int n){
     }
 }
 
+void reset(){
+    for(int i : factors){
+        cout << i << ", ";  
+    }
+    cout << endl;
+    f=2;
+    factors.clear();
+}
 
 int main() {
 
     prime(100);
+    reset();
+    
+    prime(235);
+    reset();
 
-    for(int i : factors){
-        cout << i << ", ";
-    }
+    prime(0);
+    reset();
+
     return 0;
 }
