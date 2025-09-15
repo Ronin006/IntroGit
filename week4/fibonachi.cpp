@@ -42,8 +42,11 @@ long long fibMemo(int n, vector<long long>& memo){
 
 int main(){
     cout << fibReccursion(10) << endl;
+    cout << callCount << endl;
     cout << fibLoop(10) << endl;
+    cout << callCount << endl;
     cout << fibMemo(10, memo) << endl;
     cout << callCount << endl;
+    
     return 0;
 }
